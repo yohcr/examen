@@ -8,8 +8,17 @@
 	Salidas:
 		$rest => factorial
 */
-
+do{
 	$num = readline("Ingresa numero: ");
+}while($num<=0);
+
+$rest = 1;
+
+for ($i=$num; $i>0 ; $i--) { 
+	$rest = $rest*$i;	
+}
+
+echo "El factorial de ".$num." es: ".$rest;
 
 
 ?>
